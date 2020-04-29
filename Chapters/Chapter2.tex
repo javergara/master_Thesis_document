@@ -1,4 +1,6 @@
 % Chapter 2
+\usepackage{caption}
+\usepackage{subcaption}
 
 \chapter{Problem formulation} % Write in your own chapter title
 \label{Chapter2}
@@ -12,26 +14,24 @@ Though a major staple in Africa, Asia, and Latin America, only 13\% of bananas p
 A big concern in Banana are pest and diseases, and this has a direct impact on yield and food production. Several diseases affect banana crops around the world threaten food security, such as Banana bunchy top virus(BBTV), banana Xanthomonas wilt(BXW)(see figure \ref{fig:subim1}), Black and Yellow Sigatoka and Fusarium wilt and some pest as Banana Weevil(see figure \ref{fig:subim2}). In order to manage the spread of crop diseases and pest, early identification in the field is a crucial step. Fortunately, most of the crop diseases can be managed by detecting the diseases as soon as it appears on the crop. Traditional pest and disease identification approaches rely on the support of agricultural extension specialists, but these approaches are limited in developing countries with low human infrastructure capacity. The major part of banana crops around the world are from smallholders farmers; they do not know, or they use empirical methods to make the diagnosis, but the early identification of the problem is not possible in most of the cases. 
 
 
-
-\begin{figure}[H]
-     \centering
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[width=0.9\linewidth, height=5cm]{Figures/bunch.pdf} 
-         \caption{BXW in banana fruit bunch}
-         \label{fig:subim1}
-     \end{subfigure}
-     \hfill
-     \begin{subfigure}[b]{0.3\textwidth}
-         \centering
-         \includegraphics[width=0.9\linewidth, height=5cm]{Figures/corm.pdf}
-         \caption{Banana weevil effects in the corm}
-         \label{fig:subim2}
-     \end{subfigure}
-     \hfill
-        \caption{Disease and pest impact in banana}
-        \label{fig:image2}
+\begin{figure}[h!]
+ 
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{Figures/bunch.pdf} 
+\caption{BXW in banana fruit bunch}
+\label{fig:subim1}
+\end{subfigure}
+\begin{subfigure}{0.5\textwidth}
+\includegraphics[width=0.9\linewidth, height=5cm]{Figures/corm.pdf}
+\caption{Banana weevil effects in the corm}
+\label{fig:subim2}
+\end{subfigure}
+ 
+\caption{Disease and pest impact in banana}
+\label{fig:image2}
 \end{figure}
+
+
 
 
 Artificial intelligence (AI) with deep learning models \cite{goodfellow2016deep} are useful to help identify plant diseases by the plant’s appearance and visual symptoms\cite{camargo2009image}. Deep learning models can be embedded in smartphones to create applications that could alert farmers of the presence of a disease, lead to concerted control actions and thus potentially preventing a disease from spreading over large areas\cite{mohanty2016using}. Even though many of the developing country farmers around the world do not have access to these advanced tools, internet infiltration and smartphone penetration offer new outfits for in-field crop disease detection. The GMSA (Global System for Mobile Association) predicted that global smartphone subscriptions would reach 5 billion by 2020, of which nearly one billion in Africa (GSMA Intelligence, 2016). 
